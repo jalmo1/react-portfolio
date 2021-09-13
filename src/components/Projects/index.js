@@ -125,7 +125,7 @@ function Projects() {
           <div class="flex flex-col w-full object-cover h-4/6 justify-items-start border rounded-lg overflow-hidden min-height:{320px}">
             <img
               class="w-full h-full object-cover"
-              src={runBuddy}
+              src={ohSnap}
               alt="Screenshot of Run Buddy project"
             />
           </div>
@@ -133,11 +133,13 @@ function Projects() {
         <div class="flex flex-col">
           <div class="flex flex-col gap-4">
             <h1 class="capitalize text-4xl font-extrabold text-indigo-700">
-              Run Buddy
+              OhSnap!
             </h1>
-            <h2 class="text-3xl text-purple-200">React, </h2>
+            <h2 class="text-3xl text-purple-200">React and CSS </h2>
             <p class="text-lg text-purple-200">
-              A website that offers fitness training services.
+              An application called Oh Snap! that uses React state, props,
+              Hooks, and reusable UI components to provide a simple yet sleek
+              platform for showing off some photography skills from the client.
             </p>
             <div class="flex items-center gap-4 my-6 cursor-pointer ">
               <div class="bg-indigo-500 px-5 py-3 text-white rounded-lg w-2/4 text-center">

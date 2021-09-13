@@ -27,7 +27,7 @@ function App() {
   };
 
   return (
-    <div class="bg-gray-800">
+    <div class="bg-gray-800 sm:bg-gray-800">
       <main>
         <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
       </main>

@@ -41,35 +41,64 @@ function ContactForm() {
   };
 
   return (
-    <section>
-      <h1 data-testid="h1tag">Contact me</h1>
-      <form id="contact-form" onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="name">Name:</label>
-          <input
-            type="text"
-            name="name"
-            defaultValue={name}
-            onBlur={handleChange}
-          />
+    <section class="bg-gray-800 sm:bg-gray-800">
+      <h1
+        data-testid="h1tag"
+        className="text-6xl text-center py-8 text-indigo-500"
+      >
+        Contact me
+      </h1>
+      <form id="contact-form" class="text-center pb-8" onSubmit={handleSubmit}>
+        <div class="mx-3 mb-6">
+          <div class="pb-4">
+            <label
+              htmlFor="name"
+              className="text-2xl text-center pb-8 text-indigo-500"
+            >
+              Name:
+            </label>
+            <input
+              type="text"
+              name="name"
+              class="appearance-none block w-full bg-gray-200 text-center text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+              defaultValue={name}
+              onBlur={handleChange}
+            />
+          </div>
         </div>
-        <div>
-          <label htmlFor="email">Email address:</label>
-          <input
-            type="email"
-            name="email"
-            defaultValue={email}
-            onBlur={handleChange}
-          />
+        <div class="mx-3 mb-6">
+          <div class="pb-8">
+            <label
+              htmlFor="email"
+              class="text-2xl text-center pb-8 text-indigo-500"
+            >
+              Email address:
+            </label>
+            <input
+              type="email"
+              name="email"
+              class="appearance-none block w-full bg-gray-200 text-center text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+              defaultValue={email}
+              onBlur={handleChange}
+            />
+          </div>
         </div>
-        <div>
-          <label htmlFor="message">Message:</label>
-          <textarea
-            name="message"
-            rows="5"
-            defaultValue={message}
-            onBlur={handleChange}
-          />
+        <div class="mx-3 mb-6">
+          <div>
+            <label
+              htmlFor="message"
+              class="text-2xl text-center pb-8 text-indigo-500"
+            >
+              Message:
+            </label>
+            <textarea
+              name="message"
+              rows="5"
+              class="appearance-none block w-full bg-gray-200 text-center text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+              defaultValue={message}
+              onBlur={handleChange}
+            />
+          </div>
         </div>
         {errorMessage && (
           <div>
