@@ -3,12 +3,14 @@ import runBuddy from "../../assets/images/Run-Buddy-screenshot.PNG";
 import DealSella from "../../assets/images/dealsella-capture.PNG";
 import yrTracks from "../../assets/images/yr-tracks-screenshot.PNG";
 import ohSnap from "../../assets/images/ohSnapReact.PNG";
+import snakeGame from "../../assets/images/snakegame.png";
 
 function Projects() {
   const runBuddyLink = "https://jalmo1.github.io/run-buddy/";
   const dealLink = "https://browntuckerr.github.io/SteamAPIproject/";
   const tracksLink = "https://cryptic-temple-23894.herokuapp.com/";
   const ohSnapLink = "https://jalmo1.github.io/photo-port/";
+  const snakeGameLink = "https://p3-snake.herokuapp.com/";
 
   return (
     <section>
@@ -144,6 +146,45 @@ function Projects() {
             <div class="flex items-center gap-4 my-6 cursor-pointer ">
               <div class="bg-indigo-500 px-5 py-3 text-white rounded-lg w-2/4 text-center">
                 <a target="_blank" rel="noopener noreferrer" href={ohSnapLink}>
+                  Click for live site
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-b pt-16 grid grid-cols-2 gap-8">
+        <div class="flex flex-col justify-start">
+          <div class="flex flex-col w-full object-cover h-4/6 justify-items-start border rounded-lg overflow-hidden min-height:{320px}">
+            <img
+              class="w-full h-full object-cover"
+              src={snakeGame}
+              alt="Screenshot of Run Buddy project"
+            />
+          </div>
+        </div>
+        <div class="flex flex-col">
+          <div class="flex flex-col gap-4">
+            <h1 class="capitalize text-4xl font-extrabold text-indigo-700">
+              Capture the Dot
+            </h1>
+            <h2 class="text-3xl text-purple-200">
+              React, CSS, GraphQL, NodeJS, and Express
+            </h2>
+            <p class="text-lg text-purple-200">
+              This is a fun little game that was made to kill some time! It's a
+              spin on the well known game Snake. Instead of growing a body
+              however, you just eat and eat and eat to see how many dots you can
+              get within a minute.
+            </p>
+            <div class="flex items-center gap-4 my-6 cursor-pointer ">
+              <div class="bg-indigo-500 px-5 py-3 text-white rounded-lg w-2/4 text-center">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href={snakeGameLink}
+                >
                   Click for live site
                 </a>
               </div>
