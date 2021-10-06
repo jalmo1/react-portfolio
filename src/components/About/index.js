@@ -1,10 +1,16 @@
 import React from "react";
 import profilePic from "../../assets/images/profile-pic2.jpg";
+import heroImage from "../../assets/images/hero-bg.jpg"
 
 function About() {
   return (
     <section>
-      <p class="text-8xl text-indigo-500 text-center py-10">Joshua Almodovar</p>
+      <div id='heroBg'>
+        <img src={heroImage} alt="hero background image" />  
+        
+          <p class="text-8xl text-indigo-500 text-center py-10">Joshua Almodovar</p>
+
+      </div>
       <div class="grid grid-rows-1 grid-flow-col gap-4">
         <img
           className="min-h-1/6 row-span-1 mx-auto md:object-scale-down pl-8 py-8"
