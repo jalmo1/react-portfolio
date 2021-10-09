@@ -5,7 +5,7 @@ import Nav from "../src/components/Nav";
 import About from "../src/components/About";
 import Projects from "../src/components/Projects";
 import Contact from "../src/components/Contact";
-import Photography from "../src/components/Photography";
+import Resume from "./components/Resume";
 
 function App() {
   // Using useState, set the default value for currentPage to 'Home'
@@ -19,15 +19,15 @@ function App() {
         return <Projects />;
       case "Contact":
         return <Contact />;
-      case "Photography":
-        return <Photography />;
+      case "Resume":
+        return <Resume />;
       default:
         return <About />;
     }
   };
 
   return (
-    <div class="bg-gray-800 sm:bg-gray-800">
+    <div id="main">
       <main>
         <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
       </main>

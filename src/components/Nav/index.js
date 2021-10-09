@@ -5,7 +5,7 @@ function Nav(props) {
   const tabs = ["About", "Projects", "Contact", "Resume"];
 
   return (
-    <nav class="py-8">
+    <nav id="navbar" class="py-8 bg-gray-800">
       <ul class="flex justify-around">
         {tabs.map((tab) => (
           <li
